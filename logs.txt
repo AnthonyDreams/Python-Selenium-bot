@@ -1,0 +1,366 @@
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\interface\bot.py", line 218, in main
+    save()
+  File "C:\Users\AnthonyDreams\Desktop\interface\bot.py", line 206, in save
+    if(driver.find_element_by_id('payVaultError')):
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="payVaultError"]"}
+  (Session info: chrome=77.0.3865.120)
+
+
+Traceback (most recent call last):
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\interface\bot.py", line 214, in main
+    GoToInfo()
+  File "C:\Users\AnthonyDreams\Desktop\interface\bot.py", line 149, in GoToInfo
+    driver.get('https://global.rakuten.com/en/store/okuchi/item/a-00001808/')
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 330, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 400, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\packages\six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\interface\bot.py", line 215, in main
+    AddingAddress()
+  File "C:\Users\AnthonyDreams\Desktop\interface\bot.py", line 173, in AddingAddress
+    select_states = Select(driver.find_element_by_id('shippingForm:j_id_11:whatever'))
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="shippingForm:j_id_11:whatever"]"}
+  (Session info: chrome=77.0.3865.120)
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\interface\bot.py", line 215, in main
+    AddingAddress()
+  File "C:\Users\AnthonyDreams\Desktop\interface\bot.py", line 173, in AddingAddress
+    select_states = Select(driver.find_element_by_id('shippingForm:j_id_11:whatever'))
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="shippingForm:j_id_11:whatever"]"}
+  (Session info: chrome=77.0.3865.120)
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 217, in main
+    BankInfo()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 183, in BankInfo
+    gettingCard()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 144, in gettingCard
+    credicard = driver.find_element_by_id('paymentForm:j_id_16_4:creditCardNumber')
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="paymentForm:j_id_16_4:creditCardNumber"]"}
+  (Session info: chrome=80.0.3987.132)
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 217, in main
+    BankInfo()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 183, in BankInfo
+    gettingCard()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 144, in gettingCard
+    credicard = driver.find_element_by_id('paymentForm:j_id_16_4:creditCardNumber')
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="paymentForm:j_id_16_4:creditCardNumber"]"}
+  (Session info: chrome=80.0.3987.132)
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 217, in main
+    BankInfo()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 183, in BankInfo
+    gettingCard()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 144, in gettingCard
+    credicard = driver.find_element_by_id('paymentForm:j_id_16_4:creditCardNumber')
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="paymentForm:j_id_16_4:creditCardNumber"]"}
+  (Session info: chrome=80.0.3987.132)
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 217, in main
+    BankInfo()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 183, in BankInfo
+    gettingCard()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 144, in gettingCard
+    credicard = driver.find_element_by_id('paymentForm:j_id_16_5:creditCardNumber')
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="paymentForm:j_id_16_4:creditCardNumber"]"}
+  (Session info: chrome=80.0.3987.132)
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 215, in main
+    AddingAddress()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 173, in AddingAddress
+    select_states = Select(driver.find_element_by_id('shippingForm:j_id_11:whatever'))
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="shippingForm:j_id_11:whatever"]"}
+  (Session info: chrome=80.0.3987.132)
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 217, in main
+    BankInfo()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 183, in BankInfo
+    gettingCard()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 144, in gettingCard
+    credicard = driver.find_element_by_id('paymentForm:j_id_16_5:creditCardNumber')
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="paymentForm:j_id_16_5:creditCardNumber"]"}
+  (Session info: chrome=80.0.3987.132)
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 217, in main
+    BankInfo()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 183, in BankInfo
+    gettingCard()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 144, in gettingCard
+    credicard = driver.find_element_by_id('paymentForm:j_id_16_5:creditCardNumber')
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="paymentForm:j_id_16_5:creditCardNumber"]"}
+  (Session info: chrome=80.0.3987.132)
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 219, in main
+    BankInfo()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 190, in BankInfo
+    holder = driver.find_element_by_id('paymentForm:j_id_16_4:creditCardHolderName')
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="paymentForm:j_id_16_4:creditCardHolderName"]"}
+  (Session info: chrome=80.0.3987.132)
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 219, in main
+    BankInfo()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 196, in BankInfo
+    expirationMonth = Select(driver.find_element_by_id('paymentForm:j_id_16_4:creditCardExpirationMonth'))
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="paymentForm:j_id_16_4:creditCardExpirationMonth"]"}
+  (Session info: chrome=80.0.3987.132)
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 219, in main
+    BankInfo()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 204, in BankInfo
+    element__2 = WebDriverWait(driver, delay).until(EC.presence_of_element_located((By.ID, 'j_id_w:j_id_4k:b0-cart_next')))
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 219, in main
+    BankInfo()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 204, in BankInfo
+    element__2 = WebDriverWait(driver, delay).until(EC.presence_of_element_located((By.ID, 'j_id_w:j_id_4k:b0-cart_next')))
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 216, in main
+    GoToInfo()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 151, in GoToInfo
+    element = driver.find_element_by_id('add-to-cart')
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="add-to-cart"]"}
+  (Session info: chrome=80.0.3987.132)
+
+
+Traceback (most recent call last):
+  File "main.py", line 77, in browse_file
+    bot.main()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 219, in main
+    BankInfo()
+  File "C:\Users\AnthonyDreams\Desktop\bot\bot.py", line 196, in BankInfo
+    expirationMonth = Select(driver.find_element_by_id('paymentForm:j_id_16_5:creditCardExpirationMonth'))
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\AnthonyDreams\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=80.0.3987.132)
+
+
